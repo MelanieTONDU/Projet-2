@@ -1,0 +1,582 @@
+/*GENERAL*/
+*{
+    box-sizing: border-box;}
+
+body{
+    font-family: 'Raleway', serif;
+    max-width: 100%;}
+
+body, h2, .rechercher_icone, .titre_filtres, .button_rechercher, .info_text,.afficher{
+    margin: 0;}
+
+main, header{
+    margin: 0 3% 0 3%;}
+
+a{
+    color: black;
+    text-decoration: none;}
+
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+h2{
+    padding: 0 0 30px 0;
+    font-size: 30px;}
+
+h3{
+    font-size: 1.2vw;}
+
+.gras{
+    font-weight: bold;}
+
+.hover:hover{
+    color: #0065fc;
+    cursor: pointer;
+    box-shadow: 0px 0px 7px #0065fc;}
+
+.section1{
+    display: flex;
+    margin: 50px 0 50px 0;}
+    
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+header img{
+    margin: 35px 0 20px 40px;
+    width: 130px;
+    height: 65px;}
+
+nav{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+
+nav a{
+    font-size: 20px;
+    padding: 50px 30px 45px 30px;}
+
+nav a:hover{
+    color: #0065fc;
+    border-top: #0065fc solid 2px;}
+
+/*RECHERCHER*/
+.rechercher_texte{
+    font-size: 22px;}
+
+form{
+    display: flex;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+    width: 555px;
+    border-left: none;
+    border-right: none;}
+
+form i{
+    font-size: 24px;}
+
+.rechercher_icone{
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 70px;
+    height: 65px;}
+
+.text{
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+    width: 315px;}
+
+button{
+    background-color: #0065fc ;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    font-size: 22px;
+    padding : 0 15px 0 15px;
+    width: 170px;}
+
+button:hover{
+    cursor: pointer;}
+
+.loupe{
+    display: none;}
+
+#filtres{
+    display: flex;
+    margin-top: 30px;}
+
+#filtres i{
+    font-size: 23px; 
+    color: #0065fc;
+}
+.titre_filtres{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0 40px 0 20px;}
+
+.type_filtre{
+    border: #f2f2f2 solid 3px;
+    border-left: none;
+    height: 65px;}
+
+.type_filtre:hover{
+    box-shadow: 0px 0px 7px #0065fc;
+    border-left: none;
+    cursor: pointer;}
+
+.filtres_liste{
+    display:flex;
+    gap: 40px;
+    flex-wrap: wrap;}
+
+.type_filtre i{
+    background-color: #deebff;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.filtre_nom{
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+    font-size: 22px;}
+
+.filtre_radius{
+    border-radius: 40px;}
+
+.info{
+    display: flex;
+    margin-top: 30px;}
+
+.info i{
+    width: 30px;
+    height: 30px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #0065fc}
+
+.info_text{
+    font-size: 20px;
+    padding-left: 15px;
+    width: 90%;
+    display: flex;
+    align-items: center;}
+
+/*HEBERGEMENT*/
+article{
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    width: 67%;
+    padding: 3%;}
+
+.hebergement_liste{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;}
+
+.hebergement_lien{
+    border: white solid 6px;
+    border-radius: 25px;
+    width: 31%;
+    height: 265px;
+    flex-direction: column;
+    margin-bottom: 4%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+    display: flex;}
+
+.hebergement_lien img{
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    height: 60%;}
+
+.hebergement_description{
+    background-color: white;
+    height: 40%;
+    padding-left: 5%;
+    border-radius: 0 0 10px 10px;}
+
+.section1 h3{
+    margin: 10px 0 10px 0;}
+
+.hebergement_description p{
+    font-size: 1vw;
+    margin: 10px 0 10px 0;}
+
+.bleu{
+    color: #0065fc;
+}
+
+.gris{
+    color: #d6d6d6;
+}
+
+.afficher{
+    font-weight: bold;
+    font-size: 20px;}
+
+.afficher:hover{
+    text-decoration: underline;}
+
+/*POPULAIRE*/
+aside{
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    margin-left: 3%;
+    width: 33%;
+    padding: 3%;}
+
+.populaire_titre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.populaire_titre i{
+    padding: 0 0 30px 0;
+    font-size: 30px}
+
+.populaire_liste{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 650px;}
+
+.populaire_liens{
+    border: white solid 6px;
+    border-radius: 25px;
+    display: flex;}
+
+.populaire_liens:hover{
+    color: #0065fc;
+    cursor: pointer;
+    box-shadow: 0px 0px 7px #0065fc;}
+
+.populaire_liens img{
+    width: 35%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    height: 180px;}
+
+.populaire_description{
+    background-color: white;
+    padding: 5px 5% 5px 5%;
+    width: 65%;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+
+.populaire_description p{
+    margin: 10px 0 10px 0;
+    font-size: 1.1vw;}
+
+/*ACTIVITE*/
+#activite{
+    margin: 80px 0 80px 0;}
+
+.activites_liste{
+    display: flex;
+    justify-content: space-between;}
+
+.activites_liens, .groupe_liens{
+    width: 23%;}
+
+.groupe_liens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+
+.activites_liste img{
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;}
+
+#activite a{
+    display: flex;
+    flex-direction: column;}
+
+.border{
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);}
+
+
+.img1{
+    height: 510px;}
+
+.img2{
+    height: 230px;}
+
+.img3{
+    height: 150px;}
+
+.img4{
+    height: 180px;}
+
+.img5{
+    height: 205px;}
+
+#activite h3{
+    margin: 0 0 0 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;}
+
+/*FOOTER*/
+footer{
+    background-color: #f2f2f2;
+    padding: 1% 3% 0 3%;
+    display: flex;}
+
+h4{
+    font-size: 23px;}
+
+li{
+    list-style-type: none;
+    padding-bottom: 15px;
+    font-size: 20px;}
+
+ul{
+    padding: 0;}
+
+.nos_hebergements{
+    padding: 0 17% 0 19%;}
+
+footer a:hover{
+    color: #0065fc;}
+
+/*TABLETTE*/
+@media screen and (max-width:992px)
+{
+    .section1{
+        flex-direction: column;
+        margin: 50px 0 20px 0;}
+    
+    main{
+        margin: 0;}
+
+    #rechercher{
+        margin: 40px 25px 20px 40px;}
+        
+    .filtres_liste {
+        gap: 20px;}
+
+    article{
+        width: 100%;
+        padding: 0 0 50px 0;
+        border-radius: 0;}
+
+    h2{
+        padding:30px 0 30px 4%;}
+
+    .hebergement_liste{
+        margin: 0 4% 4% 4%;}
+    
+    .hebergement_description{
+        height: 41%;}
+
+    .hebergement_description p{
+        font-size: 1.6vw;}
+
+    .afficher{
+        padding: 0 0 0 4%;}
+    
+    aside{
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        background-color: white;}
+
+    .populaire_liste{
+        margin: 0 4% 4% 4%;}
+
+    .populaire_liens{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+        height: 192px;}
+
+    .populaire_titre{
+        padding-right: 4%;}
+
+    .populaire_description h3{
+        font-size: 25px;}
+
+    .populaire_description p{
+        font-size: 20px;}
+
+    .populaire_titre i {
+        padding: 30px 0 30px 4%;}
+
+    h3{
+        font-size: 2.2vw;}
+
+    #activite{
+        margin: 20px 0 80px 0;}
+
+    .activites_liste{
+        margin: 0 4% 0 4%;}
+
+    #activite h3 {
+        margin: 0 10px 0 15px;}
+
+    .img1{
+        height: 400px;}
+
+    .img2{
+        height: 175px;}
+
+    .img3{
+        height: 125px;}
+
+    .img4{
+        height: 130px;}
+
+    .img5{
+        height: 165px;}
+
+    h4{
+        font-size: 21px;}
+
+    .nos_hebergements{
+        padding: 0 15% 0 15%;}
+
+    li{
+        font-size: 18px;}
+    }
+
+/*TELEPHONE*/
+@media screen and (max-width:767px)
+{
+    body, main, header, .loupe, aside{
+        margin: 0;}
+ 
+    header{
+        display: flex;
+        flex-direction: column;}
+
+    nav, form, aside, article, .hebergement_lien, .groupe_liens, .activites_liens{
+        width: 100%;}
+
+    nav a{
+        width: 50%;
+        text-align: center;
+        font-size: 23px;
+        padding: 20px 30px 20px 30px;}
+
+    nav a:hover{
+        border-top: none;
+        border-bottom: #0065fc solid 4px;}
+
+    #rechercher{
+        margin: 40px 25px 20px 25px;}
+
+    h1{
+        font-size: 31px;}
+
+    form{
+        margin-top: 50px;
+        height: 65px;}
+
+    .rechercher_icone{
+        width: 15%;}
+
+    .text{
+        width:70%;
+        font-size: 24px;}
+
+    button{
+        background-color: #0065fc ;
+        color: white;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        padding : 0 15px 0 15px;
+        width: 15%;}
+
+    .button_rechercher{
+        display: none;}
+    
+    .loupe{
+        display: flex;
+        padding: 0;}
+
+    #filtres{
+        flex-direction: column;}
+
+    .titre_filtres{
+        justify-content: flex-start;
+        padding: 0 0 20px 0;}
+
+    .filtres_liste{
+        gap: 20px;}
+
+    .section1{
+        flex-direction: column-reverse;}
+
+    aside{
+        border-radius: 0;
+        padding: 35px 30px 30px 30px;
+        background-color: #f2f2f2;}
+    
+    .populaire_description p{
+        font-size: 20px;}
+
+    article{
+        background-color: white;
+        padding: 35px 30px 30px 30px;}
+
+    .hebergement_liste{
+        flex-direction: column;}
+
+    .hebergement_lien{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);}
+
+    .hebergement_titre{
+        font-size: 33px ;}
+
+    h3{
+        font-size: 20px;}
+    
+    .hebergement_description p{
+        font-size: 19px;}
+    
+    .nos_hebergements{
+        padding: 0 ;}
+
+    #activite{
+        margin: 0 30px 0 30px;}
+
+    .activites_liste{
+        flex-direction: column;
+        height: auto;}
+    
+    .activites_liens, .lien{
+        margin-bottom: 30px;}
+    
+    .img1, .img2,.img3,.img4,.img5{
+        height: 180px;}
+
+    footer{
+        padding: 1% 3% 0 3%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 0 30px;}
+    
+    h4{
+        font-size: 21px;
+        margin-top: 20px;}
+    
+    li{
+        padding-bottom: 15px;
+        font-size: 17px;}
+}
